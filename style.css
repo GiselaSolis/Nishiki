@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+nav{
+    border-bottom: 1px solid black;
+    background-color: black;
+    color: white;
+    margin-bottom: 4rem;
+    padding: 1rem 0;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart {
+    position: relative;
+  
+}
+.cart__menu{
+    position: absolute;
+    top: 2rem;
+    right: 0rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+    color: black;
+    display: none;
+}
+.opened {
+    display: block;
+}
+.cart__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.cart__item img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    margin-right: 1rem;
+    border-radius: 3px;
+}
+
+.cart__total{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black ;
+    padding-top: .5rem;
+}
+
+.hero {
+    background-image: url(./images/keriliwi-nQboA13w9Vo-unsplash.jpg);
+    background-size: cover;
+    height: 80vh;
+    background-position: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.container__wide{
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.button__container{
+    margin-top: 7rem;
+}
+
+.color__button {
+    border: 1px solid;
+    padding: .5rem 3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.color__button.black {
+    background-color: black;
+    color: white;
+}
+
+
+.color__button.white{
+    background-color: white;
+    color: b;
+}
+
+.color__button.all{
+    background-color: rgb(214, 214, 214);
+    color: black;
+}
+
+.store__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 4rem;
+    width: 100%;
+    padding: 4rem 0;
+}
+.store__card {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid black;
+    position: relative;
+}
+.store__card-buy {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: white;
+    border-radius: 40px;
+    height: 2rem;
+    width: 2rem;
+    padding: .2rem;
+    cursor: pointer;
+
+}
+
+
+.store__card:hover .store__card-buy {
+    display: block;
+}
+
+.store__card-img {
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 0;
+    object-fit: cover;
+    border-bottom: 1px solid black;
+    
+}
+
+.store__card-inner{
+    padding: .5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    margin: 0;
+}
